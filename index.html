@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이캐슬 어린이집 - 0세들의 따뜻한 첫 세상</title>
+    
+    <!-- Tailwind CSS (디자인) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Phosphor Icons (아이콘) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- 폰트 (Pretendard) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            word-break: keep-all; /* 모바일 단어 단위 줄바꿈 */
+        }
+        .text-shadow-md {
+            text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        /* 파스텔톤 커스텀 색상 */
+        .bg-baby-pink { background-color: #FFF0F2; }
+        .text-baby-pink { color: #FF8DA1; }
+        .border-baby-pink { border-color: #FFB3C1; }
+    </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800 pb-20 md:pb-0">
+
+    <!-- 1. Hero Section -->
+    <header class="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+                alt="" 
+                class="w-full h-full object-cover opacity-90"
+            />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-neutral-50/100"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-rose-100 text-rose-600 text-sm font-bold mb-6 shadow-sm border border-rose-200">
+                0세반·1세반 영아 전문 어린이집 (평거휴먼시아4단지)
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-[1.3] md:leading-tight text-shadow-md">
+                가장 안전하고 포근한<br/>
+                <span class="text-rose-300">0세들의 세상, 아이캐슬</span>
+            </h1>
+            <p class="text-base md:text-xl text-white/95 mb-10 font-medium max-w-2xl mx-auto drop-shadow-md leading-relaxed">
+                복직을 앞둔 어머님의 무거운 발걸음,<br class="block md:hidden"/>
+                아이캐슬이 따뜻한 품으로 덜어드립니다.<br class="hidden md:block"/> 
+                내 집처럼 편안한 1층 환경에서<br class="block md:hidden"/>
+                선생님의 1:1 눈맞춤으로 시작하는 첫 사회생활.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-rose-400 hover:bg-rose-500 text-white px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2">
+                    <i class="ph-fill ph-phone text-xl"></i>
+                    입소 대기 및 상담 예약
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Smart Care (Trendy Features for Infants) -->
+    <section class="py-16 px-4 max-w-6xl mx-auto -mt-20 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-rose-50 transform transition-transform hover:-translate-y-2">
+                <div class="w-14 h-14 bg-rose-100 text-rose-500 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ph-fill ph-baby text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">초정밀 키즈노트 라이브 케어</h3>
+                <p class="text-neutral-600 leading-relaxed text-sm md:text-base">
+                    "오늘 수유 160ml, 낮잠 2시간 잤어요!"<br class="hidden md:block" />
+                    말 못하는 0세 아기이기에 더욱 꼼꼼하게. 매일매일 수유량, 배변 횟수, 낮잠 시간, 그리고 예쁜 미소가 담긴 사진을 키즈노트로 실시간 공유합니다.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-rose-50 transform transition-transform hover:-translate-y-2">
+                <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ph-fill ph-bowl-food text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">개별 맞춤 수제 이유식</h3>
+                <p class="text-neutral-600 leading-relaxed text-sm md:text-base">
+                    시판 이유식은 NO! 무항생제 한우와 친환경 야채로 원장님이 직접 끓입니다. 아이의 발달 단계에 맞춘 초기/중기/후기 이유식과 알러지 체크를 철저히 진행합니다.
+                </p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-rose-50 transform transition-transform hover:-translate-y-2">
+                <div class="w-14 h-14 bg-green-100 text-green-500 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ph-fill ph-shield-heart text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">무결점 위생 및 안전 환경</h3>
+                <p class="text-neutral-600 leading-relaxed text-sm md:text-base">
+                    면역력이 약한 0세를 위한 최적의 공간. 매일 교구 소독액 세척, 젖병 소독기 풀가동, 모서리 방지 100% 적용, 층간소음 걱정 없는 아파트 1층의 안락함을 제공합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Principal (Motherly Approach) -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 relative">
+                <div class="absolute inset-0 bg-rose-200 rounded-full blur-3xl opacity-30 transform -translate-x-10 translate-y-10"></div>
+                <img 
+                    src="https://images.unsplash.com/photo-1544126592-807ade215a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    alt="" 
+                    class="relative z-10 rounded-3xl shadow-2xl object-cover w-full aspect-square md:aspect-[4/5]"
+                />
+                <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl z-20 hidden md:block border border-neutral-100">
+                    <p class="font-bold flex items-center gap-2 text-rose-500">
+                        <i class="ph-fill ph-heart text-xl"></i> 엄마의 마음으로
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-rose-400 font-bold mb-2 tracking-wider">원장 인사말</h2>
+                <h3 class="text-3xl md:text-4xl font-extrabold mb-6 leading-tight">
+                    "가장 작은 아기들이<br/>
+                    가장 큰 사랑을 받는 곳"
+                </h3>
+                <p class="text-base md:text-lg text-neutral-600 mb-6 leading-relaxed">
+                    안녕하세요, 평거동 아이캐슬 어린이집 원장입니다.<br/><br/>
+                    저 역시 아이를 키워본 엄마이기에, 눈에 넣어도 아프지 않을 핏덩이 같은 아기를 어린이집에 처음 맡기실 때의 그 조마조마하고 미안한 마음을 누구보다 잘 압니다. <strong>아이캐슬은 교육 기관이기 이전에, '두 번째 엄마의 품'입니다.</strong>
+                </p>
+                <div class="bg-baby-pink p-6 rounded-2xl border-l-4 border-rose-400">
+                    <i class="ph-fill ph-quotes text-rose-300 text-4xl mb-2 block"></i>
+                    <p class="italic text-neutral-700 font-medium leading-relaxed">
+                        "어머님, 안심하고 출근하세요.<br class="hidden md:block"/> 
+                        우는 아이를 억지로 떼어놓는 곳이 아니라,<br class="hidden md:block"/>아이가 선생님 품에 안겨 스르르 잠드는<br class="block md:hidden"/> 가장 안전한 우리 집을 만들어 주겠습니다."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Schedule & Menu (Infant Focused) -->
+    <section class="py-20 px-4 bg-neutral-100">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">영아 맞춤 하루 일과</h2>
+                <p class="text-neutral-600 text-lg">아기의 생체 리듬을 존중하는 부드러운 스케쥴과 영양 가득한 수제 이유식</p>
+            </div>
+
+            <div class="flex justify-center mb-8 gap-4">
+                <button 
+                    id="btn-schedule"
+                    onclick="switchTab('schedule')"
+                    class="px-8 py-3 rounded-full font-bold text-lg transition-colors flex items-center gap-2 bg-rose-400 text-white shadow-md"
+                >
+                    <i class="ph-fill ph-clock text-xl"></i> 영아 일과표
+                </button>
+                <button 
+                    id="btn-menu"
+                    onclick="switchTab('menu')"
+                    class="px-8 py-3 rounded-full font-bold text-lg transition-colors flex items-center gap-2 bg-white text-neutral-500 border border-neutral-200 hover:bg-rose-50"
+                >
+                    <i class="ph-fill ph-bowl-food text-xl"></i> 수제 이유식/식단
+                </button>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-neutral-100">
+                <!-- 영아 일과표 내용 -->
+                <div id="content-schedule" class="p-6 md:p-10 block">
+                    <h3 class="text-2xl font-bold mb-8 text-center text-rose-800 flex items-center justify-center gap-2">
+                        <i class="ph-fill ph-sun text-rose-400 text-3xl"></i> 아이캐슬 0~1세 일과표 (예시)
+                    </h3>
+                    <p class="text-center text-sm text-neutral-500 mb-8">* 영아의 당일 컨디션, 수면 패턴, 수유 텀에 따라 1:1 유동적으로 운영됩니다.</p>
+                    <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-rose-200 before:to-transparent">
+                        
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">1</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl shadow-sm border border-neutral-100 transition-transform hover:-translate-y-1 hover:shadow-md">
+                                <div class="text-rose-500 font-bold text-sm mb-1">08:30 - 09:30</div>
+                                <h4 class="text-lg font-bold mb-2">등원 및 아침 건강 체크</h4>
+                                <p class="text-neutral-600 text-sm">따뜻한 스킨십으로 맞이하기, 체온 측정 및 부모님 전달사항(수면/배변 상태) 확인</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">2</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl shadow-sm border border-neutral-100 transition-transform hover:-translate-y-1 hover:shadow-md">
+                                <div class="text-rose-500 font-bold text-sm mb-1">09:30 - 10:10</div>
+                                <h4 class="text-lg font-bold mb-2">오전 수유/이유식 및 기저귀 갈이</h4>
+                                <p class="text-neutral-600 text-sm">개별 수유 텀에 맞춘 오전 간식 제공, 쾌적한 배변 관리</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">3</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl shadow-sm border border-neutral-100 transition-transform hover:-translate-y-1 hover:shadow-md">
+                                <div class="text-rose-500 font-bold text-sm mb-1">10:10 - 11:20</div>
+                                <h4 class="text-lg font-bold mb-2">오감발달 실내 놀이</h4>
+                                <p class="text-neutral-600 text-sm">베이비 마사지, 거울 놀이, 촉감 놀이, 폭신한 매트 위에서 대근육 발달 돕기</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">4</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl shadow-sm border border-neutral-100 transition-transform hover:-translate-y-1 hover:shadow-md">
+                                <div class="text-rose-500 font-bold text-sm mb-1">11:20 - 12:30</div>
+                                <h4 class="text-lg font-bold mb-2">점심 식사 (수제 이유식/유아식)</h4>
+                                <p class="text-neutral-600 text-sm">월령에 맞는 입자의 무항생제/친환경 이유식 제공, 선생님과 눈 맞추며 식사 예절 배우기</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">5</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl shadow-sm border border-neutral-100 transition-transform hover:-translate-y-1 hover:shadow-md">
+                                <div class="text-rose-500 font-bold text-sm mb-1">12:30 - 15:00</div>
+                                <h4 class="text-lg font-bold mb-2">달콤한 낮잠 시간 및 기저귀 갈이</h4>
+                                <p class="text-neutral-600 text-sm">백색소음과 자장가 속에서 개별 침구 숙면, 교사의 철저한 호흡 체크</p>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                            <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">6</div>
+                            <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl shadow-sm border border-neutral-100 transition-transform hover:-translate-y-1 hover:shadow-md">
+                                <div class="text-rose-500 font-bold text-sm mb-1">15:00 - 16:00</div>
+                                <h4 class="text-lg font-bold mb-2">오후 수유/간식 및 하원 준비</h4>
+                                <p class="text-neutral-600 text-sm">기상 후 컨디션 확인, 영양 간식 제공, 얼굴 닦기 및 부모님께 키즈노트 전송</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 식단표 내용 (초기에는 숨김처리) -->
+                <div id="content-menu" class="p-6 md:p-10 hidden">
+                    <div class="flex flex-col md:flex-row gap-8 items-center mb-8">
+                        <div class="md:w-1/3">
+                            <img 
+                                src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                                alt="" 
+                                class="rounded-2xl shadow-lg w-full h-48 object-cover"
+                            />
+                        </div>
+                        <div class="md:w-2/3">
+                            <h3 class="text-2xl font-bold mb-4 text-rose-800 flex items-center gap-2">
+                                <i class="ph-fill ph-shield-check text-rose-400 text-3xl"></i> 0~2세 안심 맘마 원칙
+                            </h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-2 text-neutral-700">
+                                    <i class="ph-fill ph-check-circle text-rose-400 mt-1 text-xl shrink-0"></i>
+                                    <span><strong>월령별 맞춤 입자:</strong> 미음(초기)부터 무른밥(후기), 유아식까지 개별 치아 발달에 맞춰 원장님이 직접 끓입니다.</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-neutral-700">
+                                    <i class="ph-fill ph-check-circle text-rose-400 mt-1 text-xl shrink-0"></i>
+                                    <span><strong>100% 무항생제 한우 필수:</strong> 철분 보충이 가장 중요한 시기인 만큼, 소고기는 무조건 무항생제 1등급 한우만 사용합니다.</span>
+                                </li>
+                                <li class="flex items-start gap-2 text-neutral-700">
+                                    <i class="ph-fill ph-check-circle text-rose-400 mt-1 text-xl shrink-0"></i>
+                                    <span><strong>알러지 철저 대비:</strong> 입소 시 부모님과 알러지 유발 식품을 미리 체크하고 식단을 철저히 분리합니다.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse min-w-[600px]">
+                            <thead>
+                                <tr class="bg-rose-50 text-rose-900 border-b-2 border-rose-200">
+                                    <th class="p-4 font-bold text-center w-20">단계</th>
+                                    <th class="p-4 font-bold">특징</th>
+                                    <th class="p-4 font-bold">식단 예시 (매일 변경)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-neutral-700">
+                                <tr class="border-b border-neutral-100 hover:bg-neutral-50 transition-colors">
+                                    <td class="p-4 text-center font-bold text-neutral-900 bg-neutral-50">초기 이유식</td>
+                                    <td class="p-4">쌀미음 베이스, 새로운 식재료 3일 단위 테스트</td>
+                                    <td class="p-4">유기농 쌀미음, <strong>한우</strong> 애호박 미음, 단호박 퓨레</td>
+                                </tr>
+                                <tr class="border-b border-neutral-100 hover:bg-neutral-50 transition-colors">
+                                    <td class="p-4 text-center font-bold text-neutral-900 bg-neutral-50">중기 이유식</td>
+                                    <td class="p-4">잇몸으로 으깰 수 있는 묽은 죽, 닭고기/생선 도입</td>
+                                    <td class="p-4"><strong>한우</strong> 표고버섯 묽은 죽, 무항생제 닭가슴살 고구마 죽</td>
+                                </tr>
+                                <tr class="border-b border-neutral-100 hover:bg-neutral-50 transition-colors">
+                                    <td class="p-4 text-center font-bold text-neutral-900 bg-neutral-50">후기 이유식</td>
+                                    <td class="p-4">진밥 형태, 하루 3끼 식사 패턴 형성기</td>
+                                    <td class="p-4"><strong>한우</strong> 야채 진밥, 흰살생선 브로콜리 진밥, 아이주도 간식(고구마스틱)</td>
+                                </tr>
+                                <tr class="border-b border-neutral-100 hover:bg-neutral-50 transition-colors">
+                                    <td class="p-4 text-center font-bold text-neutral-900 bg-neutral-50">일반 유아식</td>
+                                    <td class="p-4">저염 국/반찬, 어른 식사와 유사하나 부드러운 조리</td>
+                                    <td class="p-4">유기농 잡곡밥, 맑은 무국, 순두부 계란찜, 시금치 무침</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="text-sm text-rose-500 mt-4 text-right">* 수유하는 아기들의 경우, 부모님이 챙겨주신 모유/분유를 위생적으로 수유합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Reviews (Moms' Real Stories) -->
+    <section class="py-20 px-4 bg-baby-pink">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">평거동 워킹맘들의 눈물과 감동 후기</h2>
+                <div class="flex justify-center gap-1 text-rose-400 mb-2 text-xl">
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                    <i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-neutral-600">돌도 안된 아기를 맡기며 흘렸던 눈물이, 이제는 감사의 웃음이 되었습니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 후기 1 -->
+                <div class="bg-white p-6 md:p-8 rounded-3xl shadow-md border border-rose-100">
+                    <i class="ph-fill ph-quotes text-rose-200 text-4xl mb-4 block"></i>
+                    <p class="text-sm md:text-base text-neutral-700 leading-relaxed mb-6">"출산휴가 끝나고 8개월 아기 맡기면서 정말 매일 울었어요. 그런데 첫날부터 키즈노트로 밥 먹는 영상, 원장님 품에 안겨 자는 사진을 도배해주셔서 회사 화장실에서 펑펑 울었네요. 진짜 제2의 친정입니다."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-rose-200 to-rose-400 rounded-full flex items-center justify-center text-white font-bold">지</div>
+                        <div>
+                            <div class="font-bold text-sm">지우 어머님 (복직맘)</div>
+                            <div class="text-xs text-neutral-400">평거휴먼시아 거주</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 후기 2 -->
+                <div class="bg-white p-6 md:p-8 rounded-3xl shadow-md border border-rose-100">
+                    <i class="ph-fill ph-quotes text-rose-200 text-4xl mb-4 block"></i>
+                    <p class="text-sm md:text-base text-neutral-700 leading-relaxed mb-6">"규모 큰 곳 갈까 하다가, 0세는 무조건 가정어린이집 1층이 좋다는 맘카페 글 보고 휴먼시아 아이캐슬로 왔어요. 선생님들 눈빛이 진짜 우리 손주 보듯 꿀 떨어집니다. 이유식도 저보다 잘 만드시는 듯해요."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-rose-200 to-rose-400 rounded-full flex items-center justify-center text-white font-bold">서</div>
+                        <div>
+                            <div class="font-bold text-sm">서준이 어머님</div>
+                            <div class="text-xs text-neutral-400">평거엘크루 거주</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 후기 3 -->
+                <div class="bg-white p-6 md:p-8 rounded-3xl shadow-md border border-rose-100">
+                    <i class="ph-fill ph-quotes text-rose-200 text-4xl mb-4 block"></i>
+                    <p class="text-sm md:text-base text-neutral-700 leading-relaxed mb-6">"아기가 감기에 자주 걸려 걱정이었는데, 아파트 1층이라 외풍도 없고 바닥도 늘 따뜻해서인지 아이캐슬 다니고 잔병치레가 줄었어요. 아침마다 담임선생님한테 안기려고 손뻗는 거 보면 말 다했죠 뭐."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-rose-200 to-rose-400 rounded-full flex items-center justify-center text-white font-bold">하</div>
+                        <div>
+                            <div class="font-bold text-sm">하윤이 어머님</div>
+                            <div class="text-xs text-neutral-400">신안동 거주</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact & Map -->
+    <section id="contact" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-neutral-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row text-white">
+                
+                <!-- Map Placeholder -->
+                <div class="md:w-1/2 relative min-h-[300px] bg-neutral-200">
+                    <img 
+                        src="https://images.unsplash.com/photo-1576089851610-692ab6182c4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                        alt="" 
+                        class="absolute inset-0 w-full h-full object-cover opacity-50"
+                    />
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="bg-white/95 text-neutral-900 px-6 py-4 rounded-2xl shadow-xl flex flex-col items-center animate-bounce mt-10 border border-rose-100">
+                            <i class="ph-fill ph-map-pin text-rose-500 text-4xl mb-2"></i>
+                            <span class="font-bold">아이캐슬 어린이집</span>
+                            <span class="text-xs text-neutral-500">평거휴먼시아4단지 412동 101호</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="md:w-1/2 p-10 md:p-14 flex flex-col justify-center bg-[#2A2A2A]">
+                    <h2 class="text-3xl font-bold mb-2">입소 대기 및 상담 문의</h2>
+                    <p class="text-neutral-400 mb-8">0세반은 정원이 적어 금방 마감됩니다. 편하게 연락주세요.</p>
+                    
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-neutral-700 rounded-full flex items-center justify-center shrink-0">
+                                <i class="ph-fill ph-map-pin text-rose-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-neutral-400 mb-1">위치</h4>
+                                <p class="font-medium text-lg leading-snug">경남 진주시 새평거로 75<br/>(평거휴먼시아4단지 412동 101호)</p>
+                                <p class="text-sm text-rose-300 mt-1">* 우리집처럼 아늑한 1층 가정어린이집</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-neutral-700 rounded-full flex items-center justify-center shrink-0">
+                                <i class="ph-fill ph-phone-call text-rose-300 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm text-neutral-400 mb-1">상담 전화번호</h4>
+                                <p class="font-medium text-2xl font-bold text-white">055-747-9940</p>
+                                <p class="text-sm text-neutral-400 mt-1">원장님 직접 친절 상담 (보육 중일 수 있으니 안 받으면 문자 남겨주세요)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop CTA Buttons -->
+                    <div class="hidden md:flex gap-4">
+                        <a href="tel:055-747-9940" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors">
+                            <i class="ph-fill ph-phone text-xl"></i> 전화 상담하기
+                        </a>
+                        <!-- 유선번호이므로 문자는 제외하거나 임의의 번호로 연결 가능. 여기선 모바일앱에서 유선번호로 문자발송이 불가할 수 있으므로 전화버튼 강조 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-900 py-10 text-center text-neutral-500 text-sm pb-24 md:pb-10">
+        <p>© 2026 아이캐슬 어린이집. All rights reserved.</p>
+        <p class="mt-2 text-xs">본 페이지는 데모 시연을 위해 제작된 가상의 랜딩페이지입니다.</p>
+    </footer>
+
+    <!-- 7. Mobile Sticky Bottom Nav -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-neutral-200 p-3 flex gap-3 z-50 md:hidden pb-safe">
+        <a href="tel:055-747-9940" class="flex-1 bg-rose-400 text-white rounded-xl py-3.5 font-bold flex items-center justify-center gap-2 shadow-lg active:scale-95 transition-transform text-lg">
+            <i class="ph-fill ph-phone text-xl"></i> 아이캐슬 전화상담
+        </a>
+    </div>
+
+    <!-- 탭 전환용 자바스크립트 -->
+    <script>
+        function switchTab(tabName) {
+            const btnSchedule = document.getElementById('btn-schedule');
+            const btnMenu = document.getElementById('btn-menu');
+            const contentSchedule = document.getElementById('content-schedule');
+            const contentMenu = document.getElementById('content-menu');
+
+            // 기본 클래스 설정
+            const activeClass = 'px-8 py-3 rounded-full font-bold text-lg transition-colors flex items-center gap-2 bg-rose-400 text-white shadow-md'.split(' ');
+            const inactiveClass = 'px-8 py-3 rounded-full font-bold text-lg transition-colors flex items-center gap-2 bg-white text-neutral-500 border border-neutral-200 hover:bg-rose-50'.split(' ');
+
+            if (tabName === 'schedule') {
+                btnSchedule.className = activeClass.join(' ');
+                btnMenu.className = inactiveClass.join(' ');
+                
+                contentSchedule.classList.remove('hidden');
+                contentSchedule.classList.add('block');
+                contentMenu.classList.add('hidden');
+                contentMenu.classList.remove('block');
+            } else if (tabName === 'menu') {
+                btnMenu.className = activeClass.join(' ');
+                btnSchedule.className = inactiveClass.join(' ');
+                
+                contentMenu.classList.remove('hidden');
+                contentMenu.classList.add('block');
+                contentSchedule.classList.add('hidden');
+                contentSchedule.classList.remove('block');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
