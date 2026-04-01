@@ -26,9 +26,19 @@
         .bg-baby-pink { background-color: #FFF0F2; }
         .text-baby-pink { color: #FF8DA1; }
         .border-baby-pink { border-color: #FFB3C1; }
+        
+        /* 플로팅 버튼 애니메이션 */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
     </style>
 </head>
-<body class="bg-neutral-50 text-neutral-800 pb-20 md:pb-0">
+<body class="bg-neutral-50 text-neutral-800 pb-20 md:pb-0 relative">
 
     <!-- 1. Hero Section -->
     <header class="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
@@ -60,7 +70,7 @@
                 </a>
                 <a href="http://pf.kakao.com/_xauZxhX/chat" target="_blank" class="bg-[#FEE500] hover:bg-[#FADA0A] text-neutral-900 px-8 py-4 rounded-full font-bold text-lg transition-transform transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2">
                     <i class="ph-fill ph-chat-circle text-xl"></i>
-                    카카오톡 실시간 문의
+                    카카오톡 채팅 바로 시작하기
                 </a>
             </div>
         </div>
@@ -143,7 +153,7 @@
         </div>
     </section>
 
-    <!-- 4. Interactive Tabs Section (The Core Contents from Images) -->
+    <!-- 4. Interactive Tabs Section -->
     <section class="py-20 px-4 bg-neutral-100">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-10">
@@ -194,6 +204,7 @@
                     
                     <div class="space-y-6 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-rose-200 before:to-transparent">
                         
+                        <!-- 스케줄 내용 -->
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">1</div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl border border-neutral-100">
@@ -202,7 +213,6 @@
                                 <p class="text-neutral-600 text-[14px] leading-[1.6]">영아의 기분과 건강상태(투약, 배변 여부) 체크, 체온 확인 및 따뜻한 스킨십 인사</p>
                             </div>
                         </div>
-
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">2</div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl border border-neutral-100">
@@ -211,7 +221,6 @@
                                 <p class="text-neutral-600 text-[14px] leading-[1.6]">놀잇감 정리, 손씻기 후 오전 간식(이유식) 제공. 기저귀 갈이대 소독 후 쾌적하게 교체</p>
                             </div>
                         </div>
-
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">3</div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl border border-neutral-100">
@@ -220,7 +229,6 @@
                                 <p class="text-neutral-600 text-[14px] leading-[1.6]">베이비 마사지, 촉감놀이, 거울놀이 등 폭신한 매트 위에서 자율적인 대근육 발달 도모</p>
                             </div>
                         </div>
-
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">4</div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl border border-neutral-100">
@@ -229,7 +237,6 @@
                                 <p class="text-neutral-600 text-[14px] leading-[1.6]">유모차 산책 및 자연 탐색. (미세먼지 시 유희실 얕은 스펀지 블록 매트 활동)</p>
                             </div>
                         </div>
-
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">5</div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl border border-neutral-100">
@@ -238,7 +245,6 @@
                                 <p class="text-neutral-600 text-[14px] leading-[1.6]">비누 거품 손씻기 후, 올바른 식습관 지도와 함께 개별 영양 교육. 식사 후 구강 청결 도우미</p>
                             </div>
                         </div>
-
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">6</div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl border border-neutral-100">
@@ -247,7 +253,6 @@
                                 <p class="text-neutral-600 text-[14px] leading-[1.6]">자장가 속 개별 침구 숙면, 교사의 철저한 호흡 체크 및 기상 전 기저귀 교체</p>
                             </div>
                         </div>
-
                         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
                             <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-rose-300 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 font-bold">7</div>
                             <div class="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-neutral-50 p-5 rounded-2xl border border-neutral-100">
@@ -272,7 +277,6 @@
 
                     <!-- 단계별 가이드 박스 -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                        <!-- 초기 -->
                         <div class="bg-yellow-50 rounded-2xl p-6 border border-yellow-100">
                             <div class="bg-yellow-200 text-yellow-800 font-bold text-sm inline-block px-3 py-1 rounded-full mb-3">4~5개월 (초기)</div>
                             <ul class="space-y-2 text-[14px] text-neutral-700">
@@ -280,7 +284,6 @@
                                 <li><strong class="text-neutral-900">재료크기:</strong> 건더기 없도록 곱게 갈아서 조리</li>
                             </ul>
                         </div>
-                        <!-- 중기 -->
                         <div class="bg-rose-50 rounded-2xl p-6 border border-rose-100">
                             <div class="bg-rose-200 text-rose-800 font-bold text-sm inline-block px-3 py-1 rounded-full mb-3">6~8개월 (중기)</div>
                             <ul class="space-y-2 text-[14px] text-neutral-700">
@@ -288,7 +291,6 @@
                                 <li><strong class="text-neutral-900">재료크기:</strong> 0.3cm 정도로 잘게 썰어 조리</li>
                             </ul>
                         </div>
-                        <!-- 후기 -->
                         <div class="bg-blue-50 rounded-2xl p-6 border border-blue-100">
                             <div class="bg-blue-200 text-blue-800 font-bold text-sm inline-block px-3 py-1 rounded-full mb-3">9~11개월 (후기)</div>
                             <ul class="space-y-2 text-[14px] text-neutral-700">
@@ -319,7 +321,6 @@
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- 베이비 마사지 -->
                         <div class="bg-rose-50/50 rounded-2xl p-6 border border-rose-100">
                             <h4 class="text-xl font-bold text-rose-600 flex items-center gap-2 mb-6">
                                 <i class="ph-fill ph-hands-clapping text-2xl"></i> 베이비 마사지 & 사인 (만0세)
@@ -341,8 +342,6 @@
                                 </li>
                             </ul>
                         </div>
-
-                        <!-- 오감놀이 -->
                         <div class="bg-yellow-50/50 rounded-2xl p-6 border border-yellow-100">
                             <h4 class="text-xl font-bold text-yellow-600 flex items-center gap-2 mb-6">
                                 <i class="ph-fill ph-star text-2xl"></i> 오감놀이 연간 계획안
@@ -521,7 +520,7 @@
                             </div>
                             <div>
                                 <h4 class="text-sm text-neutral-400 mb-1">상담 전화번호</h4>
-                                <p class="font-medium text-2xl font-bold text-white">055-747-9940</p>
+                                <p class="font-medium text-2xl font-bold text-white">0507-1317-9940</p>
                                 <p class="text-[13px] text-neutral-400 mt-1">원장님 직접 친절 상담 (보육 중일 수 있으니 안 받으면 문자 남겨주세요)</p>
                             </div>
                         </div>
@@ -530,17 +529,17 @@
                     <!-- Desktop CTA Buttons & QR -->
                     <div class="hidden md:flex flex-col gap-4">
                         <div class="flex gap-4">
-                            <a href="tel:055-747-9940" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors">
+                            <a href="tel:0507-1317-9940" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors">
                                 <i class="ph-fill ph-phone text-xl"></i> 전화 상담하기
                             </a>
                             <a href="http://pf.kakao.com/_xauZxhX/chat" target="_blank" class="flex-1 bg-[#FEE500] hover:bg-[#FADA0A] text-neutral-900 py-4 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors">
-                                <i class="ph-fill ph-chat-circle text-xl"></i> 카카오톡 상담
+                                <i class="ph-fill ph-chat-circle text-xl"></i> 카카오톡 채팅 바로 시작하기
                             </a>
                         </div>
                         
                         <!-- QR Code Section -->
                         <div class="mt-2 p-4 bg-neutral-700/50 rounded-2xl border border-neutral-600 flex items-center gap-5">
-                            <img src="https://pf.kakao.com/rocket-web/web/profiles/_xauZxhX/qrcodes/image" alt="[attachment_0](attachment)" class="w-20 h-20 rounded-xl bg-white p-1.5 shrink-0" />
+                            <img src="https://pf.kakao.com/rocket-web/web/profiles/_xauZxhX/qrcodes/image" alt="[Image of 카카오톡 QR코드]" class="w-20 h-20 rounded-xl bg-white p-1.5 shrink-0" />
                             <div>
                                 <h4 class="font-bold text-yellow-400 mb-1 text-[14px]">스마트폰 카메라로 스캔해보세요!</h4>
                                 <p class="text-[13px] text-neutral-300 leading-[1.6]">위 QR 코드를 카메라로 스캔하시면<br/>아이캐슬 카카오톡 상담 채널로 바로 연결됩니다.</p>
@@ -563,9 +562,18 @@
             <i class="ph-fill ph-phone text-lg"></i> 전화 문의
         </a>
         <a href="http://pf.kakao.com/_xauZxhX/chat" target="_blank" class="flex-[1.4] bg-[#FEE500] text-neutral-900 rounded-xl py-3.5 font-bold flex items-center justify-center gap-1.5 shadow-lg active:scale-95 transition-transform text-[15px]">
-            <i class="ph-fill ph-chat-circle text-lg"></i> 카카오톡 상담
+            <i class="ph-fill ph-chat-circle text-lg"></i> 카카오톡 채팅 바로 시작하기
         </a>
     </div>
+
+    <!-- 8. Floating KakaoTalk Button (Desktop & Tablet) -->
+    <!-- PC 화면 우측 하단에 항상 떠있는 카카오톡 상담 버튼입니다. -->
+    <a href="http://pf.kakao.com/_xauZxhX/chat" target="_blank" class="hidden md:flex fixed bottom-10 right-10 z-[100] bg-[#FEE500] hover:bg-[#FADA0A] text-neutral-900 px-6 py-4 rounded-full shadow-[0_10px_25px_rgba(0,0,0,0.2)] items-center gap-3 transition-transform transform hover:-translate-y-1 hover:scale-105 border border-yellow-300 animate-float">
+        <div class="bg-neutral-900 text-[#FEE500] w-10 h-10 rounded-full flex items-center justify-center shadow-inner">
+            <i class="ph-fill ph-chat-circle text-2xl"></i>
+        </div>
+        <span class="font-extrabold text-lg tracking-tight">카카오톡 채팅 바로 시작하기</span>
+    </a>
 
     <!-- 탭 전환용 자바스크립트 -->
     <script>
@@ -576,14 +584,11 @@
                 const btn = document.getElementById('btn-' + tab);
                 const content = document.getElementById('content-' + tab);
                 
-                // 활성화된 탭 스타일 및 내용 보이기
                 if (tab === activeTabId) {
                     btn.className = 'w-full px-4 py-3 rounded-2xl font-bold text-sm md:text-base transition-colors flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 bg-rose-400 text-white shadow-md';
                     content.classList.remove('hidden');
                     content.classList.add('block');
-                } 
-                // 비활성화된 탭 스타일 및 내용 숨기기
-                else {
+                } else {
                     btn.className = 'w-full px-4 py-3 rounded-2xl font-bold text-sm md:text-base transition-colors flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 bg-white text-neutral-500 border border-neutral-200 hover:bg-rose-50';
                     content.classList.add('hidden');
                     content.classList.remove('block');
@@ -593,5 +598,3 @@
     </script>
 </body>
 </html>
-
-
