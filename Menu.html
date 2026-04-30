@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이캐슬 어린이집 - 2026년 4월 식단표</title>
-    
+    <title>아이캐슬 어린이집 - 2026년 5월 이유식 식단표</title>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Phosphor Icons -->
@@ -15,12 +15,11 @@
     <style>
         body {
             font-family: 'Pretendard', sans-serif;
-            word-break: keep-all; 
+            word-break: keep-all;
         }
-        /* 스크롤바 숨기기 */
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
+
         .tab-btn { transition: all 0.3s ease; }
         .tab-btn.active { background-color: #FF8DA1; color: white; border-color: #FF8DA1; }
         .tab-btn.inactive { background-color: white; color: #737373; border-color: #E5E5E5; }
@@ -35,10 +34,10 @@
                 <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-xs font-bold">평거동 영아전문 아이캐슬</span>
             </div>
             <h1 class="text-3xl md:text-4xl font-extrabold text-neutral-900 mb-2 leading-tight">
-                2026년 4월 <span class="text-rose-500">영아(1~2세) 식단표</span>
+                2026년 5월 <span class="text-rose-500">이유식 식단</span>
             </h1>
             <p class="text-[15px] text-neutral-500 mb-4">
-                발행일: 2026년 3월 18일 | 진주시 어린이사회복지급식관리지원센터 영양팀
+                발행일: 2026년 4월 17일 | 진주시 어린이사회복지급식관리지원센터 영양팀
             </p>
             <div class="bg-rose-50 border border-rose-100 p-4 rounded-2xl text-[14px] text-rose-800 leading-[1.6]">
                 <strong class="text-rose-600">아이캐슬의 약속 👑</strong><br/>
@@ -48,73 +47,93 @@
     </header>
 
     <main class="max-w-5xl mx-auto px-4">
-        
-        <!-- 주차별 탭 버튼 -->
-        <div class="flex overflow-x-auto hide-scrollbar gap-2 mb-6 pb-2">
-            <button onclick="changeWeek(1)" id="btn-week-1" class="tab-btn active whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">1주차 (4.1~4.3)</button>
-            <button onclick="changeWeek(2)" id="btn-week-2" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">2주차 (4.6~4.10)</button>
-            <button onclick="changeWeek(3)" id="btn-week-3" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">3주차 (4.13~4.17)</button>
-            <button onclick="changeWeek(4)" id="btn-week-4" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">4주차 (4.20~4.24)</button>
-            <button onclick="changeWeek(5)" id="btn-week-5" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">5주차 (4.27~4.30)</button>
+
+        <!-- 월령 단계 안내 카드 -->
+        <div class="grid grid-cols-3 gap-3 mb-6">
+            <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-center">
+                <div class="text-amber-600 font-extrabold text-[15px] mb-0.5">초기</div>
+                <div class="text-amber-500 text-[12px]">4~5개월</div>
+                <div class="text-neutral-700 font-bold text-[14px] mt-1.5 bg-white rounded-xl py-1">미음</div>
+            </div>
+            <div class="bg-green-50 border border-green-200 rounded-2xl p-4 text-center">
+                <div class="text-green-600 font-extrabold text-[15px] mb-0.5">중기</div>
+                <div class="text-green-500 text-[12px]">6~8개월</div>
+                <div class="text-neutral-700 font-bold text-[14px] mt-1.5 bg-white rounded-xl py-1">죽</div>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-4 text-center">
+                <div class="text-blue-600 font-extrabold text-[15px] mb-0.5">후기</div>
+                <div class="text-blue-500 text-[12px]">9~11개월</div>
+                <div class="text-neutral-700 font-bold text-[14px] mt-1.5 bg-white rounded-xl py-1">무른밥</div>
+            </div>
         </div>
 
-        <div class="flex justify-between items-end mb-2">
-            <div class="text-[13px] text-neutral-500 bg-white px-3 py-1.5 rounded-lg border border-neutral-200 shadow-sm flex items-center gap-1.5">
-                <span class="text-lg leading-none">🍎</span> 진주시 과일간식지원 제공일
-            </div>
+        <!-- 주차별 탭 버튼 -->
+        <div class="flex overflow-x-auto hide-scrollbar gap-2 mb-4 pb-2">
+            <button onclick="changeWeek(1)" id="btn-week-1" class="tab-btn active whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">1주차 (5.1~5.3)</button>
+            <button onclick="changeWeek(2)" id="btn-week-2" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">2주차 (5.4~5.10)</button>
+            <button onclick="changeWeek(3)" id="btn-week-3" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">3주차 (5.12~5.17)</button>
+            <button onclick="changeWeek(4)" id="btn-week-4" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">4주차 (5.18~5.24)</button>
+            <button onclick="changeWeek(5)" id="btn-week-5" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">5주차 (5.26~5.31)</button>
+        </div>
+
+        <!-- 주차별 공지 -->
+        <div id="week-notice" class="hidden mb-4 bg-yellow-50 border border-yellow-200 text-yellow-800 text-[13px] px-4 py-3 rounded-2xl flex items-center gap-2">
+            <i class="ph-fill ph-calendar-x text-lg text-yellow-500"></i>
+            <span id="week-notice-text"></span>
+        </div>
+
+        <div class="flex justify-end mb-2">
             <p class="text-xs text-neutral-500">* 표를 좌우로 밀어서(스와이프) 확인하세요.</p>
         </div>
 
         <!-- 식단표 테이블 영역 -->
         <div class="bg-white rounded-3xl shadow-md border border-neutral-200 overflow-hidden mb-8">
             <div class="overflow-x-auto hide-scrollbar">
-                <table class="w-full text-center min-w-[850px] border-collapse">
+                <table class="w-full text-center min-w-[520px] border-collapse">
                     <thead>
                         <tr class="bg-rose-100 text-rose-900 text-[15px]">
-                            <th class="p-3 border-r border-rose-200 w-24">구분</th>
-                            <th class="p-3 border-r border-rose-200 w-40" id="th-day1">1일(수)</th>
-                            <th class="p-3 border-r border-rose-200 w-40" id="th-day2">2일(목)</th>
-                            <th class="p-3 border-r border-rose-200 w-40" id="th-day3">3일(금)</th>
-                            <th class="p-3 border-r border-rose-200 w-40" id="th-day4">-</th>
-                            <th class="p-3 w-40" id="th-day5">-</th>
+                            <th class="p-3 border-r border-rose-200 w-28">단계</th>
+                            <th class="p-3 border-r border-rose-200" id="th-day1">-</th>
+                            <th class="p-3 border-r border-rose-200" id="th-day2">-</th>
+                            <th class="p-3" id="th-day3">-</th>
                         </tr>
                     </thead>
                     <tbody class="text-[15px] text-neutral-700 divide-y divide-neutral-100">
-                        <!-- 오전 간식 -->
-                        <tr class="hover:bg-neutral-50 transition-colors">
-                            <td class="p-3 font-bold bg-neutral-50 border-r border-neutral-200 text-neutral-800">오전 간식</td>
-                            <td class="p-3 border-r border-neutral-100" id="td-am-1"></td>
-                            <td class="p-3 border-r border-neutral-100" id="td-am-2"></td>
-                            <td class="p-3 border-r border-neutral-100" id="td-am-3"></td>
-                            <td class="p-3 border-r border-neutral-100" id="td-am-4"></td>
-                            <td class="p-3" id="td-am-5"></td>
+                        <!-- 초기 -->
+                        <tr class="hover:bg-amber-50/40 transition-colors">
+                            <td class="p-3 font-bold bg-amber-50 border-r border-neutral-200 text-amber-700">
+                                초기<br/><span class="text-[11px] text-amber-500 font-normal">4~5개월</span><br/><span class="text-[11px] text-neutral-400 font-normal">미음</span>
+                            </td>
+                            <td class="p-3 border-r border-neutral-100" id="td-early-1"></td>
+                            <td class="p-3 border-r border-neutral-100" id="td-early-2"></td>
+                            <td class="p-3" id="td-early-3"></td>
                         </tr>
-                        <!-- 점심 -->
-                        <tr class="hover:bg-neutral-50 transition-colors">
-                            <td class="p-3 font-bold bg-neutral-50 border-r border-neutral-200 text-neutral-800">점 심<br/><span class="text-[11px] text-neutral-400 font-normal break-keep">(국 염도 0.5%이하)</span></td>
-                            <td class="p-3 border-r border-neutral-100 align-top" id="td-lunch-1"></td>
-                            <td class="p-3 border-r border-neutral-100 align-top" id="td-lunch-2"></td>
-                            <td class="p-3 border-r border-neutral-100 align-top" id="td-lunch-3"></td>
-                            <td class="p-3 border-r border-neutral-100 align-top" id="td-lunch-4"></td>
-                            <td class="p-3 align-top" id="td-lunch-5"></td>
+                        <!-- 중기 -->
+                        <tr class="hover:bg-green-50/40 transition-colors">
+                            <td class="p-3 font-bold bg-green-50 border-r border-neutral-200 text-green-700">
+                                중기<br/><span class="text-[11px] text-green-500 font-normal">6~8개월</span><br/><span class="text-[11px] text-neutral-400 font-normal">죽</span>
+                            </td>
+                            <td class="p-3 border-r border-neutral-100" id="td-mid-1"></td>
+                            <td class="p-3 border-r border-neutral-100" id="td-mid-2"></td>
+                            <td class="p-3" id="td-mid-3"></td>
                         </tr>
-                        <!-- 오후 간식 -->
-                        <tr class="hover:bg-neutral-50 transition-colors">
-                            <td class="p-3 font-bold bg-neutral-50 border-r border-neutral-200 text-neutral-800">오후 간식</td>
-                            <td class="p-3 border-r border-neutral-100" id="td-pm-1"></td>
-                            <td class="p-3 border-r border-neutral-100" id="td-pm-2"></td>
-                            <td class="p-3 border-r border-neutral-100" id="td-pm-3"></td>
-                            <td class="p-3 border-r border-neutral-100" id="td-pm-4"></td>
-                            <td class="p-3" id="td-pm-5"></td>
+                        <!-- 후기 -->
+                        <tr class="hover:bg-blue-50/40 transition-colors">
+                            <td class="p-3 font-bold bg-blue-50 border-r border-neutral-200 text-blue-700">
+                                후기<br/><span class="text-[11px] text-blue-500 font-normal">9~11개월</span><br/><span class="text-[11px] text-neutral-400 font-normal">무른밥</span>
+                            </td>
+                            <td class="p-3 border-r border-neutral-100" id="td-late-1"></td>
+                            <td class="p-3 border-r border-neutral-100" id="td-late-2"></td>
+                            <td class="p-3" id="td-late-3"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- 안내 사항, 알레르기 범례, 원산지 박스 -->
+        <!-- 알레르기 범례, 원산지 박스 -->
         <div class="space-y-6 mb-10">
-            
+
             <!-- 알레르기 범례 -->
             <div class="bg-white p-6 rounded-3xl shadow-sm border border-neutral-200">
                 <h3 class="font-bold text-rose-600 mb-3 flex items-center gap-2">
@@ -149,22 +168,18 @@
                 <h3 class="font-bold text-blue-600 mb-3 flex items-center gap-2">
                     <i class="ph-fill ph-map-pin-line text-xl"></i> 식재료 원산지 표시
                 </h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-[14px] text-neutral-700">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-[14px] text-neutral-700">
                     <div class="bg-blue-50/50 p-3 rounded-xl border border-blue-50">
-                        <span class="block text-xs text-neutral-400 mb-1">쌀, 잡곡류, 콩, 두부</span>
+                        <span class="block text-xs text-neutral-400 mb-1">멥쌀, 콩류</span>
                         <strong class="text-neutral-900">국내산</strong>
                     </div>
                     <div class="bg-blue-50/50 p-3 rounded-xl border border-blue-50">
-                        <span class="block text-xs text-neutral-400 mb-1">소고기, 돼지고기, 닭/오리</span>
-                        <strong class="text-rose-600">국내산</strong>
+                        <span class="block text-xs text-neutral-400 mb-1">소고기(육우)</span>
+                        <strong class="text-rose-600">국내산 / 수입산</strong>
                     </div>
                     <div class="bg-blue-50/50 p-3 rounded-xl border border-blue-50">
-                        <span class="block text-xs text-neutral-400 mb-1">배추김치 (배추, 고춧가루)</span>
+                        <span class="block text-xs text-neutral-400 mb-1">육류, 수산물가공품</span>
                         <strong class="text-neutral-900">국내산</strong>
-                    </div>
-                    <div class="bg-blue-50/50 p-3 rounded-xl border border-blue-50">
-                        <span class="block text-xs text-neutral-400 mb-1">수산물 및 해물완자</span>
-                        <span class="text-[13px] text-neutral-700 font-medium">전복,고등어(국내산), 명태(러시아산)</span>
                     </div>
                 </div>
             </div>
@@ -177,47 +192,49 @@
         <p class="mt-1">랜딩페이지 기획/제작 : 짓마케팅</p>
     </footer>
 
-    <!-- 주차별 데이터 및 탭 스크립트 -->
     <script>
-        // 4월 식단 데이터 구조: [요일배열], [오전간식배열], [점심배열], [오후간식배열(메뉴, 칼로리)]
         const menuData = {
             1: {
-                days: ['-', '-', '1일(수)', '2일(목)', '3일(금)'],
-                am: [null, null, '참나물죽', '녹두죽', '흑임자죽'],
-                lunch: [null, null, '달걀덮밥①②⑤, 시래기국⑤⑥, 감자채볶음⑤⑥, 깍두기⑨', '백미밥, 건새우다시마국⑤⑨, 돼지고기장조림⑤⑥⑩, 양배추나물⑤⑥, 깍두기⑨', '수수밥, 청국장찌개⑤⑥, 닭고기굴소스볶음⑤⑥⑮, 새송이버섯나물⑤⑥, 배추김치⑨'],
-                pm: [null, null, ['바나나, 우유②', '426.1/13.3'], ['잔치국수⑤⑥', '415.6/15.7'], ['🍎방울토마토⑫, 우유②', '428.4/16.2']]
+                notice: '5월 5일(화) 어린이날은 휴원입니다.',
+                days:  ['1일(금)', null, null],
+                early: ['가지미음', null, null],
+                mid:   ['잔멸치죽', null, null],
+                late:  ['잔멸치무른밥', null, null]
             },
             2: {
-                days: ['6일(월)', '7일(화)', '8일(수)', '9일(목)', '10일(금)'],
-                am: ['달걀죽①⑤⑥', '오트밀죽②', '찹쌀죽', '황태죽', '고구마죽'],
-                lunch: ['현미밥, 봄쑥콩가루국⑤, 떡갈비볶음⑤⑥⑩⑯, 연근조림⑤⑥, 배추김치⑨', '백미밥, 조갯살양파국⑱, 간장오리주물럭⑤⑥, 근대나물, 깍두기⑨', '봄나물비빔밥⑤⑥, 된장찌개⑤⑥, 잔멸치볶음⑤⑥, 배추김치⑨', '백미밥, 아욱국⑤⑥, 쇠불고기⑤⑥⑯, 무나물, 배추김치⑨', '흑미밥, 돼지고기된장국⑤⑥⑩, 두부양념조림⑤⑥, 청경채나물, 배추김치⑨'],
-                pm: [['오렌지, 우유②', '434.5/15.6'], ['연두부&양념장⑤⑥', '387.3/16.4'], ['배, 우유②', '405.3/15.6'], ['달걀스크램블①⑤, (치즈너겟①②⑤⑥), 둥굴레차', '413.7/15.7'], ['🍎파프리카스틱, 플레인요거트②', '391.7/14.9']]
+                notice: null,
+                days:  ['4일(월)', '6일(수)', '8일(금)'],
+                early: ['무미음', '미역미음', null],
+                mid:   ['옥수수죽', '닭죽', null],
+                late:  ['옥수수양파무른밥', '닭무른밥', null]
             },
             3: {
-                days: ['13일(월)', '14일(화)', '15일(수)', '16일(목)', '17일(금)'],
-                am: ['유부죽⑤⑥', '들깨죽', '무죽', '콩나물죽⑤', '시금치죽'],
-                lunch: ['차조밥, 새우살호박국⑤⑥⑨, 돈육불고기⑤⑥⑩, 숙주당근나물, 깍두기⑨', '백미밥, 우거지된장국⑤⑥, 치즈달걀말이①②⑤, 브로콜리나물, 깍두기⑨', '야채짜장밥⑤⑥, 느타리버섯국⑤⑥, 후르츠탕수육①⑤⑥⑩, 배추김치⑨', '백미밥, 쇠고기미역국⑤⑥⑯, 동태살엿장조림⑤⑥, (생)취나물무침⑤⑥, 배추김치⑨', '기장밥, 안매운김칫국⑨, 순살찜닭⑤⑥⑮, 김자반, 깍두기⑨'],
-                pm: [['참외, 우유②', '434.5/19.4'], ['토마토스파게티⑥⑫', '411.7/13.7'], ['사과, 우유②', '431/14.7'], ['물만두&양념장⑤⑥⑩', '393.9/15.3'], ['🍎참다래, 우유②', '423.8/17.3']]
+                notice: null,
+                days:  ['12일(화)', '14일(목)', '16일(토)'],
+                early: ['배추미음', '배추미음', '단호박미음'],
+                mid:   ['배추죽', '오이죽', '양파죽'],
+                late:  ['배추무른밥', '오이무른밥', '양파무른밥']
             },
             4: {
-                days: ['20일(월)', '21일(화)', '22일(수)', '23일(목)', '24일(금)'],
-                am: ['깨죽', '전복죽⑱', '흰살생선죽', '쇠고기죽⑯', '당근양파죽'],
-                lunch: ['잡곡밥, 버섯전골⑤⑥, 다진쇠고기감자조림⑤⑥⑯, 비름나물⑤⑥, 배추김치⑨', '백미밥, 콩나물국⑤, 닭살스테이크①⑤⑥⑮, 오이나물⑤⑥, 배추김치⑨', '미나리목살볶음밥⑤⑥⑩, 단배추맑은국, 파프리카새우무침⑤⑨, 깍두기⑨', '백미밥, 수제빗국⑥, 달걀장조림①⑤⑥, 시금치나물⑤⑥, 배추김치⑨', '보리밥, 북엇국⑤⑥, 바싹돼지불고기⑤⑥⑩, 상추무침⑤⑥, 깍두기⑨'],
-                pm: [['바나나, 우유②', '422.2/14.7'], ['어묵탕①⑤⑥', '381.1/19'], ['배, 우유②', '407.9/14.9'], ['찐고구마, 매실차', '427.8/13.3'], ['🍎토마토⑫, 우유②', '426.7/18.5']]
+                notice: null,
+                days:  ['18일(월)', '20일(수)', '22일(금)'],
+                early: ['감자미음', '찹쌀미음', '찹쌀미음'],
+                mid:   ['두부죽', '아욱죽', '검은콩죽'],
+                late:  ['두부무른밥', '아욱무른밥', '검은콩무른밥']
             },
             5: {
-                days: ['27일(월)', '28일(화)', '29일(수)', '30일(목)', '-'],
-                am: ['브로콜리죽', '타락죽②', '누룽지죽', '가지죽', null],
-                lunch: ['찹쌀밥, 쇠고기뭇국⑤⑥⑯, 해물완자조림①⑤⑥⑨⑰, 얼갈이나물, 깍두기⑨', '백미밥, 달걀팟국①, 고등어구이⑤⑥⑦, 참나물무침⑤⑥, 깍두기⑨', '닭가슴살덮밥⑤⑥⑮, 바지락살국⑱, 열무나물, 배추김치⑨', '백미밥, 순살감자탕⑤⑥⑩, 들기름두부부침&양념장⑤⑥, 애호박나물⑤⑨, 배추김치⑨', null],
-                pm: [['사과, 요구르트②', '404.1/15.6'], ['볶음우동⑤⑥', '417.6/17.3'], ['참외, 우유②', '411.5/16.7'], ['꿀빵①②⑤⑥, 메밀차③', '402.2/14.8'], null]
+                notice: null,
+                days:  ['26일(화)', '28일(목)', '30일(토)'],
+                early: ['청경채미음', '청경채미음', '버섯미음'],
+                mid:   ['달걀노른자죽', '청경채죽', '김가루죽'],
+                late:  ['달걀노른자무른밥', '청경채무른밥', '김가루무른밥']
             }
         };
 
         function changeWeek(week) {
-            // 버튼 활성화 스타일 변경
-            for(let i=1; i<=5; i++) {
+            for (let i = 1; i <= 5; i++) {
                 const btn = document.getElementById('btn-week-' + i);
-                if(i === week) {
+                if (i === week) {
                     btn.classList.remove('inactive');
                     btn.classList.add('active');
                 } else {
@@ -226,87 +243,40 @@
                 }
             }
 
-            // 데이터 렌더링
             const data = menuData[week];
-            
-            for(let i=0; i<5; i++) {
-                // 1. 요일/날짜 헤더 처리
-                let th = document.getElementById('th-day' + (i+1));
-                if(data.days[i] === '-') {
-                    th.innerHTML = '-';
+
+            // 공지 표시
+            const noticeEl = document.getElementById('week-notice');
+            const noticeTextEl = document.getElementById('week-notice-text');
+            if (data.notice) {
+                noticeTextEl.textContent = data.notice;
+                noticeEl.classList.remove('hidden');
+                noticeEl.classList.add('flex');
+            } else {
+                noticeEl.classList.add('hidden');
+                noticeEl.classList.remove('flex');
+            }
+
+            for (let i = 0; i < 3; i++) {
+                const th = document.getElementById('th-day' + (i + 1));
+                if (!data.days[i]) {
+                    th.innerHTML = '<span class="text-rose-200">-</span>';
                 } else {
-                    th.innerHTML = data.days[i].replace('일', '일<br/><span class="text-xs text-rose-500 font-normal">') + '</span>';
+                    th.innerHTML = data.days[i];
                 }
 
-                // 2. 오전 간식
-                document.getElementById('td-am-' + (i+1)).innerHTML = renderSimpleCell(data.am[i]);
-                
-                // 3. 점심 (반찬 나열을 위해 줄바꿈 처리)
-                document.getElementById('td-lunch-' + (i+1)).innerHTML = renderLunchCell(data.lunch[i]);
-                
-                // 4. 오후 간식 (칼로리 포함)
-                document.getElementById('td-pm-' + (i+1)).innerHTML = renderSnackCell(data.pm[i]);
+                document.getElementById('td-early-' + (i + 1)).innerHTML = renderCell(data.early[i]);
+                document.getElementById('td-mid-'   + (i + 1)).innerHTML = renderCell(data.mid[i]);
+                document.getElementById('td-late-'  + (i + 1)).innerHTML = renderCell(data.late[i]);
             }
         }
 
-        // 식재료 색상 하이라이트 공통 함수
-        function highlightFood(text) {
-            let hl = text;
-            // 붉은 고기류
-            hl = hl.replace(/(쇠고기|돼지고기|돈육|목살|떡갈비|쇠불고기|한우)/g, '<span class="text-rose-600 font-bold">$1</span>');
-            // 가금류 및 달걀
-            hl = hl.replace(/(닭가슴살|닭고기|닭살|찜닭|달걀|오리주물럭)/g, '<span class="text-amber-600 font-bold">$1</span>');
-            // 해산물
-            hl = hl.replace(/(흰살생선|새우살|새우|고등어|조갯살|바지락|동태살|해물완자|전복|잔멸치|황태|북엇국)/g, '<span class="text-blue-600 font-bold">$1</span>');
-            return hl;
+        function renderCell(text) {
+            if (!text) return '<span class="text-neutral-300">-</span>';
+            return `<div class="font-bold text-neutral-800 break-keep leading-snug py-2">${text}</div>`;
         }
 
-        // 알레르기 번호 뱃지로 변환
-        function parseAllergy(text) {
-            return text.replace(/([①-⑲]+)/g, '<span class="inline-block bg-rose-100 text-rose-600 text-[10px] font-bold px-1 rounded-full mx-0.5 align-text-top leading-none py-0.5">$1</span>');
-        }
-
-        // 오전 간식 렌더러
-        function renderSimpleCell(text) {
-            if(!text) return '<span class="text-neutral-300">-</span>';
-            let formatted = highlightFood(text);
-            formatted = parseAllergy(formatted);
-            return `<div class="font-bold text-neutral-800 break-keep leading-snug py-2">${formatted}</div>`;
-        }
-
-        // 점심 렌더러 (쉼표를 줄바꿈으로 변경하여 리스트업)
-        function renderLunchCell(text) {
-            if(!text) return '<span class="text-neutral-300">-</span>';
-            // 쉼표 뒤에 스페이스가 있는 부분을 <br/>로 치환하여 반찬을 아래로 나열
-            let formatted = text.replace(/, /g, '<br/>');
-            formatted = highlightFood(formatted);
-            formatted = parseAllergy(formatted);
-            return `<div class="font-bold text-neutral-800 break-keep leading-[1.8] py-2">${formatted}</div>`;
-        }
-
-        // 오후 간식 렌더러 (칼로리 포함)
-        function renderSnackCell(item) {
-            if(!item) return '<span class="text-neutral-300">-</span>';
-            const [menu, nut] = item;
-            
-            let formatted = menu.replace(/, /g, '<br/>'); // 우유 등 음료 줄바꿈
-            formatted = highlightFood(formatted);
-            formatted = parseAllergy(formatted);
-            
-            // 과일 마크(🍎) 사이즈 약간 키우기
-            formatted = formatted.replace('🍎', '<span class="text-lg">🍎</span>');
-
-            const nutHtml = `<div class="mt-3 inline-flex items-center gap-1 bg-neutral-100/80 text-neutral-500 text-[11px] px-2 py-1 rounded-md border border-neutral-200"><i class="ph-fill ph-fire text-orange-400"></i> ${nut}</div>`;
-
-            return `<div class="flex flex-col items-center justify-between h-full py-2">
-                        <div class="font-bold text-neutral-800 break-keep leading-snug">${formatted}</div>
-                        ${nutHtml}
-                    </div>`;
-        }
-
-        // 1주차 데이터는 4월 1일(수)부터 시작하므로 빈칸이 있습니다. 
-        // 4월은 2주차가 꽉 차 있어서 기본 화면을 2주차로 세팅합니다.
-        changeWeek(2);
+        changeWeek(1);
     </script>
 </body>
 </html>
