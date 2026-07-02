@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이캐슬 어린이집 - 2026년 6월 이유식 식단표</title>
+    <title>아이캐슬 어린이집 - 2026년 7월 이유식 식단표</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,10 +35,10 @@
                 <span class="bg-rose-100 text-rose-600 px-3 py-1 rounded-full text-xs font-bold">평거동 영아전문 아이캐슬</span>
             </div>
             <h1 class="text-3xl md:text-4xl font-extrabold text-neutral-900 mb-2 leading-tight">
-                2026년 6월 <span class="text-rose-500">이유식 식단표</span>
+                2026년 7월 <span class="text-rose-500">이유식 식단표</span>
             </h1>
             <p class="text-[15px] text-neutral-500 mb-4">
-                발행일: 2026년 5월 18일 | 진주시 어린이사회복지급식관리지원센터 영양팀
+                발행일: 2026년 6월 18일 | 진주시 어린이사회복지급식관리지원센터 영양팀
             </p>
             <div class="bg-rose-50 border border-rose-100 p-4 rounded-2xl text-[14px] text-rose-800 leading-[1.6]">
                 <strong class="text-rose-600">아이캐슬의 약속 👑</strong><br/>
@@ -51,11 +51,11 @@
         
         <!-- 주차별 탭 버튼 -->
         <div class="flex overflow-x-auto hide-scrollbar gap-2 mb-6 pb-2">
-            <button onclick="changeWeek(1)" id="btn-week-1" class="tab-btn active whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">1주차 (6.1~6.6)</button>
-            <button onclick="changeWeek(2)" id="btn-week-2" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">2주차 (6.8~6.13)</button>
-            <button onclick="changeWeek(3)" id="btn-week-3" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">3주차 (6.15~6.20)</button>
-            <button onclick="changeWeek(4)" id="btn-week-4" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">4주차 (6.22~6.27)</button>
-            <button onclick="changeWeek(5)" id="btn-week-5" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">5주차 (6.29~6.30)</button>
+            <button onclick="changeWeek(1)" id="btn-week-1" class="tab-btn active whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">1주차 (7.1~7.4)</button>
+            <button onclick="changeWeek(2)" id="btn-week-2" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">2주차 (7.6~7.11)</button>
+            <button onclick="changeWeek(3)" id="btn-week-3" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">3주차 (7.13~7.18)</button>
+            <button onclick="changeWeek(4)" id="btn-week-4" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">4주차 (7.20~7.25)</button>
+            <button onclick="changeWeek(5)" id="btn-week-5" class="tab-btn inactive whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-[15px] border shadow-sm">5주차 (7.27~7.31)</button>
         </div>
 
         <div class="flex justify-between items-end mb-2">
@@ -188,37 +188,37 @@
 
     <!-- 주차별 데이터 및 탭 스크립트 -->
     <script>
-        // 6월 이유식 식단 데이터 구조: [요일배열], [초기], [중기], [후기] - 각 식단은 [메뉴, 열량/단백질]
+        // 7월 이유식 식단 데이터 구조: [요일배열], [초기], [중기], [후기] - 각 식단은 [메뉴, 열량/단백질]
         const menuData = {
             1: {
-                days: ['1일(월)', '2일(화)', '3일(수) 지방선거', '4일(목)', '5일(금)', '6일(토) 현충일'],
-                initial: [['완두콩미음', '31.4/0.9'], ['완두콩미음', '31.4/0.9'], null, ['무미음', '26.6/0.5'], ['무미음', '26.6/0.5'], null],
-                middle: [['완두콩죽', '56.4/1.6'], ['얼갈이죽', '52.2/1'], null, ['무죽', '57.9/1.1'], ['들깨죽', '77.3/2'], null],
-                late: [['완두콩무른밥', '87.6/2.1'], ['얼갈이무른밥', '79/1.6'], null, ['무무른밥', '79.2/1.4'], ['들깨무른밥', '113.3/2.9'], null]
+                days: ['-', '-', '1일(수)', '2일(목)', '3일(금)', '4일(토)'],
+                initial: [null, null, ['감자미음', '29/0.6'], ['열무미음', '26.1/0.6'], ['열무미음', '26.1/0.6'], ['열무미음', '26.1/0.6']],
+                middle: [null, null, ['김가루죽', '52.1/1.2'], ['열무죽', '56.6/1.3'], ['고구마죽', '66.6/1.1'], ['참깨죽', '62.4/1.5']],
+                late: [null, null, ['김가루무른밥', '85.7/3.3'], ['열무무른밥', '106/2.4'], ['고구마무른밥', '100/1.6'], ['참깨무른밥', '81.7/2.4']]
             },
             2: {
-                days: ['8일(월)', '9일(화)', '10일(수)', '11일(목)', '12일(금)', '13일(토)'],
-                initial: [['순두부미음⑤', '27.4/0.8'], ['순두부미음⑤', '27.4/0.8'], ['순두부미음⑤', '27.4/0.8'], ['고구마미음', '33.3/0.5'], ['고구마미음', '33.3/0.5'], ['고구마미음', '33.3/0.5']],
-                middle: [['닭죽⑮', '61.8/3.3'], ['단배추죽', '57.2/1.2'], ['순두부죽⑤', '57.8/2'], ['흑임자죽', '82.4/2.1'], ['고구마죽', '66.6/1.1'], ['아욱죽', '60.5/1.5']],
-                late: [['닭무른밥⑮', '119.1/7.6'], ['단배추무른밥', '79.7/1.7'], ['순두부무른밥⑤', '83.5/2.5'], ['흑임자무른밥', '114.7/2.8'], ['고구마무른밥', '100/1.6'], ['아욱무른밥', '84.3/2']]
+                days: ['6일(월)', '7일(화)', '8일(수)', '9일(목)', '10일(금)', '11일(토)'],
+                initial: [['새송이버섯미음', '38.3/0.9'], ['새송이버섯미음', '38.3/0.9'], ['새송이버섯미음', '38.3/0.9'], ['단호박미음', '28.5/0.5'], ['단호박미음', '28.5/0.5'], ['단호박미음', '28.5/0.5']],
+                middle: [['파프리카죽', '58.5/1.1'], ['새송이버섯죽', '60.7/1.6'], ['얼갈이죽', '52.2/1'], ['단호박죽', '56.5/1'], ['녹두죽', '75.9/2.7'], ['찹쌀죽', '76.5/1.4']],
+                late: [['파프리카무른밥', '80.5/1.5'], ['새송이버섯무른밥', '83.1/2.1'], ['얼갈이무른밥', '79/1.6'], ['단호박무른밥', '84.6/1.6'], ['녹두무른밥', '119.1/4.4'], ['찹쌀무른밥', '109.4/2']]
             },
             3: {
-                days: ['15일(월)', '16일(화)', '17일(수)', '18일(목)', '19일(금)', '20일(토)'],
-                initial: [['옥수수미음', '32.2/0.7'], ['옥수수미음', '32.2/0.7'], ['옥수수미음', '32.2/0.7'], ['양배추미음', '27.3/0.6'], ['양배추미음', '27.3/0.6'], ['양배추미음', '27.3/0.6']],
-                middle: [['달걀노른자죽①', '83.8/2.5'], ['타락죽②', '60.3/1.3'], ['옥수수죽', '76.1/1.7'], ['누룽지죽', '78.6/1.4'], ['양배추죽', '54.5/1.1'], ['흰살생선죽', '62.5/2.7']],
-                late: [['달걀노른자무른밥①', '125.8/3.8'], ['타락무른밥②', '93.2/2.2'], ['옥수수무른밥', '92.6/1.7'], ['누룽지무른밥', '117.9/2'], ['양배추무른밥', '83.5/1.8'], ['흰살생선무른밥', '92.3/4.1']]
+                days: ['13일(월)', '14일(화)', '15일(수)', '16일(목)', '17일(금) 제헌절', '18일(토)'],
+                initial: [['배추미음', '26.4/0.5'], ['배추미음', '26.4/0.5'], ['배추미음', '26.4/0.5'], ['쇠고기육수미음⑯', '41.1/1.4'], null, ['쇠고기육수미음⑯', '41.1/1.4']],
+                middle: [['감자죽', '58.2/1.1'], ['배추죽', '57.2/1.2'], ['흰살생선죽', '62.5/2.7'], ['청경채죽', '75.2/1.6'], null, ['쇠고기죽⑯', '70.7/2.8']],
+                late: [['감자무른밥', '93.6/1.9'], ['배추무른밥', '79.2/1.6'], ['흰살생선무른밥', '92.3/4.1'], ['청경채무른밥', '105/2.3'], null, ['쇠고기무른밥⑯', '106.2/4.2']]
             },
             4: {
-                days: ['22일(월)', '23일(화)', '24일(수)', '25일(목)', '26일(금)', '27일(토)'],
-                initial: [['쇠고기육수미음⑯', '41.1/1.4'], ['쇠고기육수미음⑯', '41.1/1.4'], ['쇠고기육수미음⑯', '41.1/1.4'], ['찹쌀미음', '43.8/0.8'], ['찹쌀미음', '43.8/0.8'], ['찹쌀미음', '43.8/0.8']],
-                middle: [['콩나물죽⑤', '54.4/1.4'], ['쇠고기당근죽⑯', '74.8/3'], ['단호박죽', '56.5/1'], ['녹두죽', '75.9/2.7'], ['찹쌀죽', '76.5/1.4'], ['돼지고기파프리카죽⑩', '77.6/3.1']],
-                late: [['콩나물무른밥⑤', '83/2.1'], ['쇠고기당근무른밥⑯', '112.3/4.5'], ['단호박무른밥', '84.6/1.6'], ['녹두무른밥', '119.1/4.4'], ['찹쌀무른밥', '109.4/2'], ['돼지고기파프리카무른밥⑩', '125.6/4.8']]
+                days: ['20일(월)', '21일(화)', '22일(수)', '23일(목)', '24일(금)', '25일(토)'],
+                initial: [['애호박미음', '26.7/0.5'], ['애호박미음', '26.7/0.5'], ['애호박미음', '26.7/0.5'], ['두부미음⑤', '30.1/1'], ['두부미음⑤', '30.1/1'], ['두부미음⑤', '30.1/1']],
+                middle: [['애호박죽', '54.1/1.1'], ['닭살죽⑮', '61.8/3.3'], ['양파당근죽', '53.5/1'], ['두부죽⑤', '65.8/2.4'], ['미역죽', '60.8/1.6'], ['달걀노른자죽①', '83.8/2.5']],
+                late: [['애호박무른밥', '81.3/1.6'], ['닭살무른밥⑮', '97.6/5.9'], ['당근양파무른밥', '82.9/1.6'], ['두부무른밥⑤', '74.4/2.4'], ['미역무른밥', '99.4/4.5'], ['달걀노른자무른밥①', '142.1/4.6']]
             },
             5: {
-                days: ['29일(월)', '30일(화)', '-', '-', '-', '-'],
-                initial: [['감자미음', '29/0.6'], ['감자미음', '29/0.6'], null, null, null, null],
-                middle: [['청경채죽', '75.2/1.6'], ['감자죽', '58.2/1.1'], null, null, null, null],
-                late: [['청경채무른밥', '105/2.3'], ['감자무른밥', '93.6/1.9'], null, null, null, null]
+                days: ['27일(월)', '28일(화)', '29일(수)', '30일(목)', '31일(금)', '-'],
+                initial: [['가지미음', '26.6/0.5'], ['가지미음', '26.6/0.5'], ['가지미음', '26.6/0.5'], ['무미음', '26.6/0.5'], ['무미음', '26.6/0.5'], null],
+                middle: [['타락죽②', '60.3/1.3'], ['가지죽', '53.1/1.1'], ['잔멸치죽', '67.1/4'], ['무죽', '57.9/1.1'], ['누룽지죽', '78.6/1.4'], null],
+                late: [['타락무른밥②', '93.1/2.2'], ['가지무른밥', '79.7/1.6'], ['잔멸치무른밥', '106.2/7'], ['무무른밥', '79.2/1.4'], ['누룽지무른밥', '117.9/2'], null]
             }
         };
 
@@ -252,8 +252,8 @@
         function highlightFood(text) {
             let hl = text;
             hl = hl.replace(/(쇠고기|돼지고기|한우)/g, '<span class="text-rose-600 font-bold">$1</span>');
-            hl = hl.replace(/(닭|달걀노른자|달걀)/g, '<span class="text-amber-600 font-bold">$1</span>');
-            hl = hl.replace(/(흰살생선)/g, '<span class="text-blue-600 font-bold">$1</span>');
+            hl = hl.replace(/(닭살|닭|달걀노른자|달걀)/g, '<span class="text-amber-600 font-bold">$1</span>');
+            hl = hl.replace(/(흰살생선|잔멸치)/g, '<span class="text-blue-600 font-bold">$1</span>');
             return hl;
         }
 
